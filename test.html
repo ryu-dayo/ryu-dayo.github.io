@@ -3,9 +3,18 @@
     <head></head>
     <body>
         <div align = "center">
-            <a rel="ar" href="/models/anya/Anya.usdz">
-                <img src="/models/anya/Anya_Forger_Anime.png">
+            <a rel="ar" id="demo" href="./models/anya/Anya.usdz">
+                <img src="./models/anya/Anya_Forger_Anime.png">
             </a>
         </div>
+        <script>
+            const a = document.createElement("a");
+            if(a.relList.supports("ar")){
+                pass;
+            }
+            else{
+                document.getElementById("demo").href="";
+            }
+        </script>
     </body>
 </html>
